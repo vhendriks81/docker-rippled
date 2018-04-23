@@ -1,10 +1,14 @@
 # Docker rippled image
 
-This is ubuntu based rippled image
+This is ubuntu based rippled image. There is also a branch which points to the latest nightly build which is being built and published to docker hub nightly. 
 
 ## Run with docker
 
-    $ docker run -v rippled.conf:/etc/rippled.conf gatehub/rippled --conf /etc/rippled.conf
+    $ docker run -v rippled.conf:/etc/rippled.conf vhendriks/docker-rippled:rippled-stable --conf /etc/rippled.conf
+    
+    or
+    
+    $ docker run -v rippled.conf:/etc/rippled.conf vhendriks/docker-rippled:rippled-nightly --conf /etc/rippled.conf
 
 ## Example node rippled config
 
